@@ -446,7 +446,7 @@ nav
 }
     .gridBoxes1
     {
-        background-color: #0079D8;
+        background-color: #1E70B6;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -539,7 +539,7 @@ nav
     }
     .gridBoxes9
     {
-        background-color: #0079D8;
+        background-color: #0072C6;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -563,7 +563,7 @@ nav
     }
     .gridBoxes11
     {
-        background-color: #0079D8;
+        background-color: #0072C5;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -632,7 +632,7 @@ nav
     }
     .gridBoxes16
     {
-        background-color: #0079D8;
+        background-color: #0063B1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -644,7 +644,7 @@ nav
     }
     .gridBoxes17
     {
-        background-color: #0079D8;
+        background-color: #107C10;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -668,7 +668,7 @@ nav
     }
     .gridBoxes19
     {
-        background-color: #0079D8;
+        background-color: #0072C5;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -679,7 +679,7 @@ nav
     }
     .gridBoxes20
     {
-        background-color: #0079D8;
+        background-color: #2B5797;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -691,7 +691,7 @@ nav
     }
     .gridBoxes21
     {
-        background-color: #0079D8;
+        background-color: #1D7145;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -704,7 +704,7 @@ nav
     }
     .gridBoxes22
     {
-        background-color: #0079D8;
+        background-color: #D04525;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -715,7 +715,7 @@ nav
     }
     .gridBoxes23
     {
-        background-color: #0079D8;
+        background-color: #1E70B6;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -728,7 +728,7 @@ nav
     }
     .gridBoxes24
     {
-        background-color: #0079D8;
+        background-color: #7E3878;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -739,7 +739,7 @@ nav
     }
     .gridBoxes25
     {
-        background-color: #0079D8;
+        background-color: #077366;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -748,7 +748,11 @@ nav
         margin: 0 0 4px 4px;
         cursor: pointer;
     }
-
+    .gridBoxes4 img,  .gridBoxes5 img,  .gridBoxes6 img,  .gridBoxes7 img,  .gridBoxes8 img,  .gridBoxes15 img, .gridBoxes16 img, .gridBoxes17 img, .gridBoxes18 img
+    {
+        width: 25px;
+        height: auto;
+    }
 .mainPanel
 {
     display: grid;
