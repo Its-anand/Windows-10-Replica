@@ -767,3 +767,6 @@ nav
 {
     cursor: pointer;
 }
+/*start menu is hided from here*/
+.start
+{display: none;}
