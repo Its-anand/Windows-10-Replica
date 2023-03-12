@@ -147,8 +147,8 @@
         <section class="spker">
             <img src="./images/speakers.png" alt="">
         </section>
-        <section class="time_date">
-            <div><p>11:00 AM</p><p>10/12/2022</p></div>
+        <section class="time_date" >
+            <div><p id="time">11:00 AM</p><p id="date">10/12/2022</p></div>
         </section>
         <section class="notification">
             <img src="./images/notifications.png" alt="">
@@ -156,4 +156,20 @@
         <section class="showDesktop"></section>
     </nav>
 </body>
+<script>
+setInterval(timeFunction,1000);
+    function timeFunction(){
+    const fullDate = new Date();
+    let hour = fullDate.getHours();
+    let minute = fullDate.getMinutes();
+    let session = "AM";
+    let date = fullDate.getDate();
+    let month = fullDate.getMonth() + 1;
+    let year = fullDate.getFullYear();
+
+        document.querySelector('#time').innerText = hour+":"+minute+" "+session;
+        (month <=9)? document.querySelector('#date').innerText = date+"-"+0+month+"-"+year:document.querySelector('#date').innerText = date+"-"+month+"-"+year;
+        console.log(date+"-"+month+"-"+year);
+    }
+</script>
 </html>
