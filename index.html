@@ -166,7 +166,13 @@ setInterval(timeFunction,1000);
     let date = fullDate.getDate();
     let month = fullDate.getMonth() + 1;
     let year = fullDate.getFullYear();
-
+    if(hour > 12){
+        session = "PM";
+        hour = hour - 12;
+    }
+    if(hour == 0){
+        hour = 12;
+    }
         document.querySelector('#time').innerText = hour+":"+minute+" "+session;
         (month <=9)? document.querySelector('#date').innerText = date+"-"+0+month+"-"+year:document.querySelector('#date').innerText = date+"-"+month+"-"+year;
         console.log(date+"-"+month+"-"+year);
