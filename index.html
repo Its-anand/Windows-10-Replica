@@ -182,9 +182,9 @@ setInterval(timeFunction,1000);
     let start = document.querySelector('.start');
     function showHideWindow()
     {
-        if(start.style.display==="none")
+        if(start.style.display == 'none' || start.style.display == '')
         {
-            start.style.display="inline";
+            start.style.display="block";
         }
         else
         {
