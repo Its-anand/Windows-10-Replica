@@ -109,7 +109,7 @@
         </div>
     </section>
     <nav>
-        <section class="winBtn"><img src="./images/winBtn.png" alt=""></section>
+        <section class="winBtn" onclick="showHideWindow()"><img src="./images/winBtn.png" alt=""></section>
         <section class="search_section">
             <div class="cortana">
                 <div class="outter_shell_cortana"><div class="inner_shell_cortana"></div></div>
@@ -157,6 +157,7 @@
     </nav>
 </body>
 <script>
+    /*Time script*/
 setInterval(timeFunction,1000);
     function timeFunction(){
     const fullDate = new Date();
@@ -175,7 +176,20 @@ setInterval(timeFunction,1000);
     }
         document.querySelector('#time').innerText = hour+":"+minute+" "+session;
         (month <=9)? document.querySelector('#date').innerText = date+"-"+0+month+"-"+year:document.querySelector('#date').innerText = date+"-"+month+"-"+year;
-        console.log(date+"-"+month+"-"+year);
+    }
+    /*Window Button functionality*/
+    let winBtn = document.querySelector('.winBtn');
+    let start = document.querySelector('.start');
+    function showHideWindow()
+    {
+        if(start.style.display==="none")
+        {
+            start.style.display="inline";
+        }
+        else
+        {
+            start.style.display="none"
+        }
     }
 </script>
 </html>
